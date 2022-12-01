@@ -1,9 +1,9 @@
 package main
 
 import (
-	"bufio"
-	"os"
-	"strconv"
+    "bufio"
+    "os"
+    "strconv"
 )
 
 func main() {
@@ -28,4 +28,3 @@ func main() {
     }
     println(max)
 }
-/* vim: set expandtab sts=4 sw=4 ts=8 ft=c: */
