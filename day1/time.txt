@@ -1,0 +1,2 @@
+./problem1 < input.txt  0.00s user 0.00s system 63% cpu 0.009 total
+./problem2 < input.txt  0.00s user 0.00s system 61% cpu 0.008 total
