@@ -1,10 +1,10 @@
 package main
 
 import (
-	"bufio"
-	"os"
-	"sort"
-	"strconv"
+    "bufio"
+    "os"
+    "sort"
+    "strconv"
 )
 
 func main() {
@@ -13,8 +13,8 @@ func main() {
     var num_calories int
     for s.Scan() {
         if snack := s.Text(); snack != "" {
-			snack, _ := strconv.Atoi(snack)
-			num_calories += snack
+	    snack, _ := strconv.Atoi(snack)
+	    num_calories += snack
         } else {
             nums = append(nums, num_calories)
             num_calories = 0
@@ -23,5 +23,7 @@ func main() {
 
     sort.Ints(nums)
     total := nums[len(nums)-1] + nums[len(nums)-2] + nums[len(nums)-3]
-	println(total)
+    println(total)
 }
+
+/* vim: set expandtab sts=4 sw=4 ts=8 ft=c: */

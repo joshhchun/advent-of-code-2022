@@ -12,19 +12,20 @@ func main() {
     var num_calories int
     for s.Scan() {
         if snack := s.Text(); snack != "" {
-			snack, _ := strconv.Atoi(snack)
-			num_calories += snack
+	    snack, _ := strconv.Atoi(snack)
+	    num_calories += snack
         } else {
             nums = append(nums, num_calories)
             num_calories = 0
         }
     }
 
-	max := 0
-	for _, num := range nums {
-		if num > max {
-			max = num
-		}
-	}
-	println(max)
+    max := 0
+    for _, num := range nums {
+        if num > max {
+	    max = num
+        }
+    }
+    println(max)
 }
+/* vim: set expandtab sts=4 sw=4 ts=8 ft=c: */
