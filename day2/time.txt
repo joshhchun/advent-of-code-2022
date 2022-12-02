@@ -1,0 +1,2 @@
+./problem1  0.00s user 0.00s system 66% cpu 0.009 total
+./problem2  0.00s user 0.00s system 69% cpu 0.010 total
