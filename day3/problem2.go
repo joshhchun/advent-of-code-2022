@@ -35,21 +35,21 @@ func findGroups(rucksacks []string, groups chan<- []string) {
 func intersection(group []string) rune {
     m1 := map[rune]struct{}{}
     m2 := map[rune]struct{}{}
-		for _, item := range group[0] {
-			m1[item] = struct{}{}
-		}
+    for _, item := range group[0] {
+        m1[item] = struct{}{}
+    }
 
-		for _, item := range group[1] {
-			if _, exist := m1[item]; exist {
-				m2[item] = struct{}{}
-			}
-		}
+    for _, item := range group[1] {
+        if _, exist := m1[item]; exist {
+            m2[item] = struct{}{}
+        }
+    }
 
-		for _, item := range group[2] {
-			if _, exist := m2[item]; exist {
-				return item
-			}
-		}
+    for _, item := range group[2] {
+        if _, exist := m2[item]; exist {
+            return item
+        }
+    }
     return -1
 }
 
