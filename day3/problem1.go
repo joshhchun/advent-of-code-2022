@@ -21,8 +21,8 @@ func main() {
         }(rucksack)
     }
 
-		wg.Wait()
-		close(common)
+    wg.Wait()
+    close(common)
 
     total := 0
     for let := range common {
