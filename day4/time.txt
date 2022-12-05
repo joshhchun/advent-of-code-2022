@@ -1,0 +1,6 @@
+# Go
+./problem1  0.00s user 0.00s system 66% cpu 0.009 total
+./problem2  0.00s user 0.00s system 71% cpu 0.009 total
+
+# Python
+./problem2.py  0.02s user 0.01s system 78% cpu 0.045 total
