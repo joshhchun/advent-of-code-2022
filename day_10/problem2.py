@@ -11,13 +11,13 @@ def check_sprite():
     if not CYCLE % 40:
         print()
 
-for instr in (s.strip() for s in open("input.txt").readlines()):
-    y = instr.split()
-    if y[0] == "addx":
+instrs = (s.strip().split() for s in open("input.txt").readlines())
+for instr in instrs:
+    if instr[0] == "addx":
         for _ in range(2):
             CYCLE += 1
             check_sprite()
-        REG += int(y[1])
+        REG += int(instr[1])
     else:
         CYCLE += 1
         check_sprite()
