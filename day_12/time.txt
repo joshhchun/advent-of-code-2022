@@ -1,0 +1,2 @@
+./problem1.py  0.05s user 0.02s system 82% cpu 0.075 total
+./problem2.py  0.04s user 0.01s system 83% cpu 0.060 total
